@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/main.css">
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<title>skproger</title>
+	</head>
+  <body>
+		<div class="container mt-5">
+			<h3>Карточная колода</h3>
+			<button id="btnShowTheDeck" class="btn btn-primary" type="submit" >Показать колоду</button>
+			<button id="btnSortDeck" class="btn btn-primary" type="submit" >Перемешать колоду</button>
+			<input id="nCard" type="text" placeholder="N карта" required>
+			<button id="btnNCard" class="btn btn-primary" type="submit" >Показать N карту</button>
+			<button id="btnFirstCard" class="btn btn-primary" type="submit" >Показать верхнюю карту</button>
+			<button id="btnLastCard" class="btn btn-primary" type="submit" >Показать нижнюю карту</button>
+			<button id="btnRebuildDeck" class="btn btn-primary" type="submit" >Пересобрать колоду</button>
+			<input id="nCardDel" type="text" placeholder="N карта" required>
+			<button id="btnNCardDel" class="btn btn-primary" type="submit" >Удалить N карту</button>
+			<div id="deck">
+				<img id="card" class="2 hearts cards none" src="jpeg/cards/2hearts.png">
+				<img id="card" class="3 hearts cards none" src="jpeg/cards/3hearts.png">
+				<img id="card" class="4 hearts cards none" src="jpeg/cards/4hearts.png">
+				<img id="card" class="5 hearts cards none" src="jpeg/cards/5hearts.png">
+				<img id="card" class="6 hearts cards none" src="jpeg/cards/6hearts.png">
+				<img id="card" class="7 hearts cards none" src="jpeg/cards/7hearts.png">
+				<img id="card" class="8 hearts cards none" src="jpeg/cards/8hearts.png">
+				<img id="card" class="9 hearts cards none" src="jpeg/cards/9hearts.png">
+				<img id="card" class="10 hearts cards none" src="jpeg/cards/10hearts.png">
+				<img id="card" class="J hearts cards none" src="jpeg/cards/Jhearts.png">
+				<img id="card" class="Q hearts cards none" src="jpeg/cards/Qhearts.png">
+				<img id="card" class="K hearts cards none" src="jpeg/cards/Khearts.png">
+				<img id="card" class="A hearts cards none" src="jpeg/cards/Ahearts.png">
+				<img id="card" class="2 diamond cards none" src="jpeg/cards/2diamond.png">
+				<img id="card" class="3 diamond cards none" src="jpeg/cards/3diamond.png">
+				<img id="card" class="4 diamond cards none" src="jpeg/cards/4diamond.png">
+				<img id="card" class="5 diamond cards none" src="jpeg/cards/5diamond.png">
+				<img id="card" class="6 diamond cards none" src="jpeg/cards/6diamond.png">
+				<img id="card" class="7 diamond cards none" src="jpeg/cards/7diamond.png">
+				<img id="card" class="8 diamond cards none" src="jpeg/cards/8diamond.png">
+				<img id="card" class="9 diamond cards none" src="jpeg/cards/9diamond.png">
+				<img id="card" class="10 diamond cards none" src="jpeg/cards/10diamond.png">
+				<img id="card" class="J diamond cards none" src="jpeg/cards/Jdiamond.png">
+				<img id="card" class="Q diamond cards none" src="jpeg/cards/Qdiamond.png">
+				<img id="card" class="K diamond cards none" src="jpeg/cards/Kdiamond.png">
+				<img id="card" class="A diamond cards none" src="jpeg/cards/Adiamond.png">
+				<img id="card" class="2 club cards none" src="jpeg/cards/2club.png">
+				<img id="card" class="3 club cards none" src="jpeg/cards/3club.png">
+				<img id="card" class="4 club cards none" src="jpeg/cards/4club.png">
+				<img id="card" class="5 club cards none" src="jpeg/cards/5club.png">
+				<img id="card" class="6 club cards none" src="jpeg/cards/6club.png">
+				<img id="card" class="7 club cards none" src="jpeg/cards/7club.png">
+				<img id="card" class="8 club cards none" src="jpeg/cards/8club.png">
+				<img id="card" class="9 club cards none" src="jpeg/cards/9club.png">
+				<img id="card" class="10 club cards none" src="jpeg/cards/10club.png">
+				<img id="card" class="J club cards none" src="jpeg/cards/Jclub.png">
+				<img id="card" class="Q club cards none" src="jpeg/cards/Qclub.png">
+				<img id="card" class="K club cards none" src="jpeg/cards/Kclub.png">
+				<img id="card" class="A club cards none" src="jpeg/cards/Aclub.png">
+				<img id="card" class="2 spade cards none" src="jpeg/cards/2spade.png">
+				<img id="card" class="3 spade cards none" src="jpeg/cards/3spade.png">
+				<img id="card" class="4 spade cards none" src="jpeg/cards/4spade.png">
+				<img id="card" class="5 spade cards none" src="jpeg/cards/5spade.png">
+				<img id="card" class="6 spade cards none" src="jpeg/cards/6spade.png">
+				<img id="card" class="7 spade cards none" src="jpeg/cards/7spade.png">
+				<img id="card" class="8 spade cards none" src="jpeg/cards/8spade.png">
+				<img id="card" class="9 spade cards none" src="jpeg/cards/9spade.png">
+				<img id="card" class="10 spade cards none" src="jpeg/cards/10spade.png">
+				<img id="card" class="J spade cards none" src="jpeg/cards/Jspade.png">
+				<img id="card" class="Q spade cards none" src="jpeg/cards/Qspade.png">
+				<img id="card" class="K spade cards none" src="jpeg/cards/Kspade.png">
+				<img id="card" class="A spade cards none" src="jpeg/cards/Aspade.png">
+			</div>
+		</div>
+
+    	<!-- Optional JavaScript -->
+		<script src="js/index.js"></script>
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	</body>
+</html>
